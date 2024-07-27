@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#qrcode{
+    display: flex;
+    justify-content: center;
+}
+.offcanvas.offcanvas-end{
+    height: max-content;
+    width: 200px !important;
+    background-color: rgb(255, 255, 255);
+    color: black ;
+    border-width: 10px;
+    opacity: 1;
+    margin-top: 72px;
+    margin-right: 5%;
+    border-radius: 20px;
+
+}
+#header {
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+.container-fluid{
+    padding: 0 !important;
+}
+.header-nav {
+    color: rgb(10, 10, 10);
+}
+.navbar-toggler{
+    border-width: medium !important;
+    border-radius: 20px !important;
+    border-color: rgb(124, 111, 111) !important;
+    size: 100% !important;
+}
+.navbar{
+    padding: 0 !important;
+}
+.navbar-nav .nav-link {
+    color: #0e0e0e !important; /* Change text color to white */
+    font-weight: 800;
+}
+.header-logo {
+    max-width: 100%; /* Adjust the size as needed */
+    max-height: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+.header-links {
+    margin-right: 40px;
+    max-width: 70%;
+    display: flex;
+}
+.header-button {
+    background-color: transparent;
+    border-color: rgb(124, 111, 111);
+    size: 100%;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.course-button{
+    background-color: transparent;
+    border-color: rgb(124, 111, 111);
+    size: 100%;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+body {
+    margin-top: 100px;
+    background-image: url('/photos/newBg.png');
+    background-repeat: no-repeat;
+    
+    
+}
+
+#coachingGoods{
+    height: max-content;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+.homepagewords{
+    font-size: 40px;
+
+}
+#coursediv{
+    
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.cources{
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.coall{
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    height: fit-content;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border: #0e0e0e 40px;
+    border-right: #0e0e0e;
+    border-radius: 30px;
+    box-shadow: 10px 10px #888888;
+}
+.cfooter{
+    padding: 20px;
+    height: fit-content;
+    background-color: #1f1e1e;
+    color: white;
+    
+}
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact_Us_List {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact_Us_List li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact_Us_detail a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .contact_Us_detail a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact_Us_detail svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    
+  }
+  
+  .iconheightmap {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .footer-logo{
+    height: 200px;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  #modalContent{
+    text-align: center;
+  }
+  .cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before, .cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.cross::before {
+    border-bottom: 1px solid rgb(255, 48, 48);
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+    
+}
+.cross::after {
+    border-bottom: 1px solid rgb(255, 48, 48);
+    -webkit-transform: skewY(10deg);
+    transform: skewY(10deg);
+}
+@media only screen and (max-width: 800px) and (min-width:600px) {
+    #coachingGoods{
+       
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .offcanvas.offcanvas-end{
+        margin-top: 72px;
+        margin-right: 5%;
+        border-radius: 20px;
+    
+    }
+    #coursediv{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .header-logo {
+        max-width: 20%; /* Adjust the size for smaller screens */
+        max-height: 70px;
+        margin-left: 10px;
+    }
+    
+    /* Change the text of the first link for screens less than 600px */
+    .header-links {
+        margin-right: 20px;
+        max-width: 70%;
+    }
+    #coachingGoods{
+       
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .homepagewords{
+        font-size: 30px;
+    }
+    
+}
+@media only screen and (max-width: 426px) {
+    #coachingGoods{
+        
+        margin-left: 13px;
+        margin-right: 13px;
+        
+    }
+    .homepagewords{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 374px) {
+    #coachingGoods{
+        
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .homepagewords{
+        font-size: 17px;
+    }
+    .header-button{
+        display: none;
+    }
+}

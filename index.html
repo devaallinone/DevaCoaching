@@ -36,8 +36,9 @@
     <div id="header">
         <img src="/photos/DevaLogo.png" alt="Header Image" class="header-logo">
         <div class="header-links">
-            <button onclick="DemoShowHandler(id)" id="demoClick" class="header-button" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
-            <button onclick="CourseRegistrationHandler()" class="header-button" data-bs-toggle="modal" data-bs-target="#exampleModal">REGISTRATION</button>
+            <button onclick="DemoShowHandler(id)" id="demoClick" class="course-button" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+            
+            <button onclick="CourseRegistrationHandler()" class="course-button" data-bs-toggle="modal" data-bs-target="#exampleModal">REGISTRATION</button>
             <nav class="navbar">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -46,7 +47,7 @@
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     
                     <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <ul class="navbar-nav">
                         <li class="nav-item">
                           <a class="nav-link" href="#coursediv">Demo</a>
                         </li>
@@ -68,77 +69,117 @@
         </div>
     </div>
     <div id="coachingGoods">
-          <h3 style="color: rgb(242, 169, 10); font-family:cursive;">let's code our life</h3>
-          <h1 class="homepagewords">Dedicated Platform For </h1>
-          <h1 class="homepagewords">Personalised Technical Training</h1>
-          <p>Empower your learning journey with a premier technical training institute. Choose from a diverse array of certification training courses across various technical domains, delivered by industry-leading mentors.</p>
-          <p>If(Coaching == 'DEVAALLINONE'){ <span style="color: rgb(21, 255, 0); font-weight:bold; "> ==> Success Chances > 90 </span>. } </p>
-          <p>Else{  ==> <span style="color: red; font-weight:bold;">Let's Join DEVAALLINONE </span> . }</p>
-          <p>Embark on a journey toward a fulfilling career in the field of technology, with courses covering a wide range of domains, and unlock opportunities worldwide.</p>
+      <div class="coachingContent">
+        <h3 style="color: rgb(242, 169, 10); font-family:cursive;">Don’t wait. The time will never be just right.</h3>
+        <h1 class="homepagewords">Dedicated Platform For </h1>
+        <h1 class="homepagewords">Personalised Technical Training</h1>
+        <!-- <p>Empower your learning journey with a premier technical training institute. Choose from a diverse array of certification training courses across various technical domains, delivered by industry-leading mentors.</p>
+        <p>If(Coaching == 'DEVAALLINONE'){ <span style="color: rgb(21, 255, 0); font-weight:bold; "> ==> Success Chances > 90 </span>. } </p>
+        <p>Else{  ==> <span style="color: red; font-weight:bold;">Let's Join DEVAALLINONE </span> . }</p>
+        <p>Embark on a journey toward a fulfilling career in the field of technology, with courses covering a wide range of domains, and unlock opportunities worldwide.</p>
+         -->
+      </div>
           
           
     </div>
+    <!-- <div id="coachingCodeContent"> -->
+        <!-- <h3 style="color: rgb(242, 169, 10); font-family:cursive;">let's code our life</h3>
+        <h1 class="homepagewords">Dedicated Platform For </h1>
+        <h1 class="homepagewords">Personalised Technical Training</h1> -->
+        <!-- <div class="taglines">
+          <p>Empower your learning journey with a premier technical training institute. Choose from a diverse array of certification training courses across various technical domains, delivered by industry-leading mentors.</p>
+        
+          <p>Embark on a journey toward a fulfilling career in the field of technology, with courses covering a wide range of domains, and unlock opportunities worldwide.</p>
+          
+        </div>
+       
+        <div class="coadelines">
+          <p> If ( Coaching == 'DEVAALLINONE') </p>
+          <p>{</p>
+          <p style="color: rgb(75, 97, 240);">&nbsp;&nbsp;&nbsp;&nbsp; console.log(Success Chances > 90%); </p>
+          <p>}</p>
+        <p >Else</p>
+        <p>{</p>
+        <p> <span style="color: rgb(75, 97, 240); ">&nbsp;&nbsp;&nbsp;&nbsp;console.log(Let's Join DEVAALLINONE); </span></p>
+        <p>}</p>
+        </div> -->
+          
+          
+    <!-- </div> -->
     <div id="coursediv">
-          <h3>OUR TRAINING COURSES</h3>
-          <p>Get certified by global certifications and deepen your expertise.</p>
-          <p style="font-size:larger; color:red">All Batches start from 1st of July 2024 (more details at +91 63765 98200.)<u> <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeFW-Mc5T4QAVWUTt_35jE-e1OHYR9F4T0U6WJyH1E2WUJwqQ/viewform?usp=sf_link" target="_blank" style="color: green;">Visit/CallBack Request</a></u></p>
+      <div class="coursedivcontent">
+        <h3>OUR TRAINING COURSES</h3>
+        <p>Get certified by global certifications and deepen your expertise.</p>
+        <div class="line"></div>
+        <p style="font-size:larger; color:rgb(112, 112, 230)">All Batches start from 1st of July 2024 (more details at +91 63765 98200.)<u> <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeFW-Mc5T4QAVWUTt_35jE-e1OHYR9F4T0U6WJyH1E2WUJwqQ/viewform?usp=sf_link" target="_blank">
+          <button  id="developerDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">Visit/CallBack Request</button>
+          
+        </a></u></p>
+      </div>
+         
           <div class="cources">
             <div class="admin coall" id="admin">
+              <img src="./photos//salesforceadminstrator.webp" alt="Image Not Found">
               <h4><u> SALESFORCE ADMINISTRATOR </u></h4>
               <p>
-                  Become a certified Salesforce Administrator and Platform App Builder with our Salesforce Admin Training delivered by Salesforce experts, designed and curated by Dev Tiwari. With over 8000+ students trained, 100+ glowing reviews and 5-star ratings, gain a strong understanding of the fundamentals of the Salesforce admin certification course, including the data model, data security, and process automation from Deva All In One, the pioneer in Salesforce administrator training.
+                  Become a certified Salesforce Administrator and Platform App Builder with our Salesforce Admin Training delivered by Salesforce experts, designed and curated by Dev Tiwari. 
               </p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="admin" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="adminDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="admin" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
               </div>
 
             </div>
             <div class="developer coall" id="developer">
+              <img src="./photos//salesforcedeveloper.webp" alt="Image Not Found">
               <h4><u> SALESFORCE DEVELOPER </u></h4>
               <p>
-                Our Salesforce Developer Training program is designed to make you a certified Salesforce Developer through guidance given by expert Salesforce Developers. Our program has been designed and curated by Dev Tiwari, focusing on fundamental concepts such as Apex, Lightning & API integrations. Specially designed for students to get a strong understanding of how to custom solutions on Salesforce.  let's start with devaallinone
+                Our Salesforce Developer Training program is designed to make you a certified Salesforce Developer through guidance given by expert Salesforce Developers. 
               </p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="developer" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="developerDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="developer" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
               </div>
             </div>
             <div class="admin-developer coall" id="admin-developer">
+              <img src="./photos//salesforce-lwc-course-1.webp" alt="Image Not Found">
               <h4><u>SALESFORCE ADMINISTRATOR + DEVELOPER +LWC</u></h4>
               <p>
-                Join the elite league of certified SF Developers with our world-class Salesforce Admin And Developer Training program .Our Salesforce Admin and Developer Training program is designed to make you a certified Administrator and Salesforce Developer through guidance given by expert Salesforce Developers. Our program has been designed and curated by Dev Tiwari, focusing on fundamental concepts such as Apex, Lightning & API integrations. Specially designed for students to get a strong understanding of how to custom solutions on Salesforce.Let's embark on a comprehensive journey with DevaAllinone.
+                Join the elite league of certified SF Developers with our world-class Salesforce Admin And Developer Training program .Our Salesforce Admin and Developer Training program is designed to make you a certified Administrator.
               </p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="admin-developer" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal" > ENROLL NOW </button>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="admin-developerDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="admin-developer" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal" > ENROLL NOW </button>
               </div>
             
             </div>
             <div class="marketing coall" id="marketing">
+              <img src="./photos//salesforce-marketing-cloud-course.webp" alt="Image Not Found">
               <h4><u>SALESFORCE MARKETING CLOUD EMAIL SPECIALIST</u></h4>
               <p>
-                Join the elite league of certified SFMC Developers with our world-class Salesforce Marketing Cloud Email Specialist & Admin Training program. Led by Dev Tiwari, a seasoned Salesforce expert, our Salesforce marketing cloud training program is designed to equip you with the skills needed to thrive in the competitive marketing world. With a track record of training over 8,000 students, backed by 100 glowing reviews and 5-star ratings, you'll gain a strong understanding of the fundamentals of Marketing Cloud Salesforce Training and beyond, with comprehensive instruction from Deva All In One.
+                Join the elite league of certified SFMC Developers with our world-class Salesforce Marketing Cloud Email Specialist & Admin Training program. Led by Dev Tiwari, a seasoned Salesforce expert.
                 </p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="marketing" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="marketingDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="marketing" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
               </div>
             </div>
             <div class="c-c++-java coall" id="c-c++-java">
+              <img src="./photos//salesforceadminstrator.webp" alt="Image Not Found">
               <h4><u>C/C++/JAVA</u></h4>
-              <p>Become part of the prestigious league of certified C/C++ Developers with our cutting-edge C/C++ Training Program. Our comprehensive training equips you with the skills and knowledge needed to excel in C and C++ development. Led by industry experts, our program covers essential concepts such as memory management, data structures, and algorithm design, empowering you to create robust and efficient solutions. Designed and curated by experienced professionals, our curriculum ensures a deep understanding of C/C++ fundamentals, enabling you to build innovative software solutions. Join us at DevaAllinone and embark on an enriching journey where your learning knows no bounds.</p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="c-cpp" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
+              <p>Become part of the prestigious league of certified C/C++ Developers with our cutting-edge C/C++ Training Program. Our comprehensive training equips you with the skills and knowledge needed to excel in C and C++ development. </p>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="c-cppDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="c-cpp" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
               </div>
             </div>
             <div class="html-css-js coall" id="html-css-js">
+              <img src="./photos//salesforceadminstrator.webp" alt="Image Not Found">
               <h4><u>HTML , CSS , JAVASCRIPT</u></h4>
-              <p>Dive into the world of web development mastery with our unparalleled HTML, CSS, and JavaScript Training Program. Our comprehensive curriculum is meticulously designed to shape you into a skilled web developer, adept at crafting captivating and responsive websites. Guided by seasoned professionals, our program delves deep into HTML for content structuring, CSS for creative styling, and JavaScript for interactive functionality, ensuring you acquire a robust foundation in front-end development. With an emphasis on hands-on learning and real-world projects, our training equips you to tackle any web development challenge with confidence. Join us at DevaAllinone and embark on an immersive journey.</p>
-              <div style="text-align:center;width:100%">
-                <button onclick="enrollNow(id)" id="webd" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
+              <p>Dive into the world of web development mastery with our unparalleled HTML, CSS, and JavaScript Training Program. Our comprehensive curriculum is meticulously designed to shape you into a skilled web developer.</p>
+              <div class="coursebutton" style="text-align:center;width:100%">
                 <button onclick="DemoNow(id)" id="weddDemo" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal">DEMO</button>
+                <button onclick="enrollNow(id)" id="webd" class="course-button" style="padding: 7px; margin-top:7px" data-bs-toggle="modal" data-bs-target="#exampleModal"> ENROLL NOW </button>
               </div>
             </div>
             

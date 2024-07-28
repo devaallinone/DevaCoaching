@@ -15,6 +15,17 @@ function DemoShowHandler(){
 function letsgo(){
     
 }
+
+
+
+
+
+
+
+
+
+
+
 function enrollNow(id){
     let item = document.getElementById('modalContent');
     console.log(id,document.getElementById("modalContent").innerHTML);
